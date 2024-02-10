@@ -5,6 +5,9 @@
 # user enter numbers
 entered_number = int(input("Enter 3-digit number: "))
 
+# choice operation
+selection = input("Select an operation (min, max or avg): ")
+
 # define each number
 number_1 = entered_number // 100 % 10
 number_2 = entered_number % 100 // 10
@@ -26,9 +29,6 @@ if number_3 > maximum:
 
 # find avg
 average = (number_1 + number_2 + number_3) / 3
-
-# choice operation
-selection = input("Select an operation (min, max or avg): ")
 
 # output the selected operation
 if selection == "min":
